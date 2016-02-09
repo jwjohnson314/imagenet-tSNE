@@ -1,4 +1,5 @@
-#!/usr/bin/env/python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # resize imagenet 2012 val images
 

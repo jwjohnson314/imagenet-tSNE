@@ -17,7 +17,7 @@ counter = 0.
 for filename in ims:
 	im = cv2.imread(filename)
 	small = cv2.resize(im, (50,50))
-	im_name = str.split(filename, '/')[5]
+	im_name = str.split(filename, '/')[-1]
 	cv2.imwrite(os.path.join(IMAGE_DEST, im_name + '-small.JPEG'), small)
 	counter += 1
 	if counter % 100 == 0:

@@ -19,7 +19,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # load the tsne points
-data = sio.loadmat('imagenet_val_embed.mat')
+data = sio.loadmat('./imagenet_val_embed.mat')
 
 # set min point to 0 and scale
 x = data['x'] - np.min(data['x'])
@@ -31,7 +31,7 @@ G = np.zeros((S, S, 3), dtype=np.uint8)
 s = 50  # size of single image
 
 
-with open('val_imgs_med2.txt') as f:
+with open('./val_imgs_med2.txt') as f:
 	for i, fs in enumerate(f):
 		if np.mod(i, 100) == 0:
 			print('%d/%s...\n') % (i, str.split(fs, '/')[2])

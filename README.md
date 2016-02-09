@@ -6,7 +6,7 @@ To run, download the scripts here, the files imagenet_val_embed.mat, val_imgs_me
 
 In resize_imagenet_small.py, set IMAGE_ROOT to path to imagenet validation data
 
-put all other files in one directory.
+put all files (except original imagenet validation data) in one directory.
 
 ./run.sh
 
